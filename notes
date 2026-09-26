@@ -1,0 +1,63 @@
+maxx@mv3:~ $ python3 /home/maxx/Desktop/june2026/recreate/picamera2/examples/imx500/imx500_object_detection_demo2.py   --model network.rpk   --labels labels.txt   --fps 30   --bbox-normalization   --ignore-dash-labels   --bbox-order xy   --output "recording_$(date +%Y%m%d_%H%M%S).mp4"
+
+maxx@mv3:~ $ python3 /home/maxx/Desktop/july2026/scripts/temp/demo2.py   --model network.rpk   --labels labels.txt   --fps 30   --bbox-normalization   --ignore-dash-labels   --bbox-order xy   --output "videos/recording_$(date +%Y%m%d_%H%M%S).mp4"
+
+
+python3 /home/maxx/Desktop/june2026/recreate/picamera2/examples/imx500/imx500_object_detection_demo2.py \
+  --model network.rpk \
+  --labels labels.txt \
+  --fps 30 \
+  --bbox-normalization \
+  --ignore-dash-labels \
+  --bbox-order xy \
+  --output "recording_$(date +%Y%m%d_%H%M%S).mp4"
+
+
+
+
+
+rpicam-detect \
+  --model /usr/share/imx500-models/imx500_network_mobilenet_ssd.rpk
+
+
+
+line1 : maxx@mv3:~/Desktop/june2026/recreate/4june $ python3 /home/maxx/Desktop/june2026/recreate/picamera2/examples/imx500/imx500_object_detection_demo.py --model network.rpk --labels labels.txt --fps 30 --bbox-normalization --ignore-dash-labels --bbox-order xy
+
+line2 : rpicam-vid -t 10s -o output.264 --post-process-file /usr/share/rpi-camera-assets/imx500_mobilenet_ssd.json --width 1920 --height 1080 --framerate 30
+python3 /home/maxx/Desktop/june2026/recreate/picamera2/examples/imx500/imx500_object_detection_demo.py --model network.rpk --labels labels.txt --fps 25 --bbox-normalization --ignore-dash-labels --bbox-order xy
+
+
+python3 /home/maxx/Desktop/june2026/recreate/picamera2/examples/imx500/imx500_object_detection_demo2.py --model network.rpk --labels labels.txt --fps 25 --bbox-normalization --ignore-dash-labels --bbox-order xy
+
+
+python3 /home/maxx/Desktop/june2026/recreate/picamera2/examples/imx500/imx500_object_detection_demo2.py \
+  --model network.rpk \
+  --labels labels.txt \
+  --fps 30 \
+  --bbox-normalization \
+  --ignore-dash-labels \
+  --bbox-order xy \
+  --output recording.mp4
+
+
+/home/maxx/Desktop/june2026/recreate/picamera2/examples/imx500/imx500_object_detection_demo2.py
+
+
+
+
+
+
+python3 /home/maxx/Desktop/june2026/recreate/picamera2/examples/imx500/imx500_object_detection_demo2.py \
+  --model network.rpk \
+  --labels labels.txt \
+  --fps 30 \
+  --bbox-normalization \
+  --ignore-dash-labels \
+  --bbox-order xy \
+  --output "recording_$(date +%Y%m%d_%H%M%S).mp4"
+
+maxx@mv3:~/Desktop/june2026/recreate/15june/out $ python3 /home/maxx/Desktop/june2026/recreate/picamera2/examples/imx500/imx500_object_detection_demo.py --model network.rpk --labels labels.txt --fps 30 --bbox-normalization --ignore-dash-labels --bbox-order xy
+
+
+
+rpicam-vid -t 20s -o output.mp4 --post-process-file /home/maxx/Desktop/june2026/recreate/4june/imx500_mobilenet_ssd.json --width 640 --height 640 --framerate 30
